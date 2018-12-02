@@ -1,0 +1,225 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+}
+
+* {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.btn-df {
+    color: #000;
+    background-color: #F47280;
+    border-color: #F47280;
+    border-radius: .3rem !important;
+}
+
+.btn-toggle {
+  margin: 0 4rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #F47280;
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff;
+  transition: left 0.25s;
+}
+.btn-toggle.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+}
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+  line-height: -0.5rem;
+  color: #fff;
+  letter-spacing: 0.75px;
+  left: 0.4125rem;
+  width: 2.325rem;
+}
+.btn-toggle.btn-sm:before {
+  text-align: right;
+}
+.btn-toggle.btn-sm:after {
+  text-align: left;
+  opacity: 0;
+}
+.btn-toggle.btn-sm {
+  margin: 0 0.5rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 2rem;
+}
+.btn-toggle.btn-sm:focus,
+.btn-toggle.btn-sm.focus,
+.btn-toggle.btn-sm:focus.active,
+.btn-toggle.btn-sm.focus.active {
+  outline: none;
+}
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+  line-height: 1.5rem;
+  width: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0.4rem;
+  transition: opacity 0.25s;
+}
+.btn-toggle.btn-sm:before {
+  content: 'EN';
+  left: 0.1rem;
+}
+.btn-toggle.btn-sm:after {
+  content: 'ES';
+  right: -0.5rem;
+  opacity: 0.5;
+}
+.btn-toggle.btn-sm > .handle {
+    position: absolute;
+    top: 0.195rem;
+    left: 0.1875rem;
+    width: 2.8rem;
+    height: 2.2rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-sm.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.btn-sm.active > .handle {
+  left: 2.0275rem;
+  transition: left 0.25s;
+}
+.btn-toggle.btn-sm.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.btn-sm.active:after {
+  opacity: 1;
+    left: 2.7125rem !important;
+}
+.btn-toggle.btn-sm.btn-sm:before,
+.btn-toggle.btn-sm.btn-sm:after {
+    line-height: -0.5rem;
+    color: #000;
+    letter-spacing: 0.75px;
+    width: 2.325rem;
+    z-index: 1;
+}
+.btn-toggle.btn-sm.btn-sm:before {
+    z-index: 1;
+    text-align: right;
+    left: 2.3125rem !important;
+    color: #757575;
+}
+.btn-toggle.btn-sm.btn-sm:after {
+  text-align: left;
+  opacity: 1;
+}
+.btn-toggle.btn-sm.btn-sm.active:before {
+  opacity: 0;
+}
+.btn-toggle.btn-sm.btn-sm.active:after {
+  opacity: 1;
+}
+
+
+
+.btn {
+    text-transform: uppercase;
+}
+
+.jumbotron {
+    background-color: transparent;
+    background-image: url('../img/banner.svg');
+    background-repeat: no-repeat;
+    background-position: right; 
+}
+.jumbotron h1.display-6 {
+    font-size: 2.15rem;
+}
+
+.j-height {
+    height: 502px;
+}
+.jumbotron .input-group.input-group-lg .input-group-append>.btn,
+.jumbotron .input-group.input-group-lg>.form-control {
+    height: 50px;
+    border: 0 solid #ced4da;
+}
+.jumbotron .input-group.input-group-lg .input-group-append>.btn.btn-light {
+    height: 40px;
+    border-radius: 4px;
+    margin: 5px 11px;
+    padding: 0.2rem 0.8rem;
+}
+.jumbotron .input-group.input-group-lg>.form-control.search {
+    background: url('../img/ic_search_24px.svg') no-repeat left center;
+    padding-left: 4rem;
+    background-blend-mode: multiply;
+}
+.jumbotron .p-searches {
+    position: absolute;
+    bottom: 0;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

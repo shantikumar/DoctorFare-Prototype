@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 185 368">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #212121;
+        font-size: 300px;
+        font-family: HelveticaNeue, Helvetica Neue;
+      }
+
+      .cls-2 {
+        filter: url(#_1);
+      }
+    </style>
+    <filter id="_1" x="0" y="0" width="185" height="368" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <text id="_1-2" data-name="1" class="cls-1" transform="translate(1 295)"><tspan x="0" y="0">1</tspan></text>
+  </g>
+</svg>
