@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 51.362 51.362">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #475993;
+      }
+
+      .cls-3 {
+        filter: url(#facebook_1_);
+      }
+    </style>
+    <filter id="facebook_1_" x="0" y="0" width="51.362" height="51.362" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_68" data-name="Group 68" transform="translate(-1050 -3570)">
+    <g id="Group_67" data-name="Group 67">
+      <rect id="Rectangle_483" data-name="Rectangle 483" class="cls-1" width="24" height="28.4" transform="translate(1064 3584)"/>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 1050, 3570)">
+      <path id="facebook_1_2" data-name="facebook (1)" class="cls-2" d="M28.868,0H4.5A4.5,4.5,0,0,0,0,4.5V28.867a4.5,4.5,0,0,0,4.5,4.5h12.02l.02-11.922h-3.1a.731.731,0,0,1-.731-.728l-.015-3.843a.731.731,0,0,1,.731-.734h3.092V12.423c0-4.309,2.632-6.656,6.476-6.656h3.154a.731.731,0,0,1,.731.731v3.24a.731.731,0,0,1-.73.731H24.212c-2.091,0-2.5.993-2.5,2.451v3.215H26.31a.731.731,0,0,1,.726.817L26.58,20.8a.731.731,0,0,1-.726.645H21.737l-.02,11.922h7.152a4.5,4.5,0,0,0,4.5-4.5V4.5A4.5,4.5,0,0,0,28.868,0Z" transform="translate(9 9)"/>
+    </g>
+  </g>
+</svg>

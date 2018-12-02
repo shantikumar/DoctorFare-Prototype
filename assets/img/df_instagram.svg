@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50.362 50.362">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        filter: url(#Path_53);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.008" x2="0.5" y2="0.998" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e09b3d"/>
+      <stop offset="0.3" stop-color="#c74c4d"/>
+      <stop offset="0.6" stop-color="#c21975"/>
+      <stop offset="1" stop-color="#7024c4"/>
+    </linearGradient>
+    <filter id="Path_53" x="0" y="0" width="50.362" height="50.362" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" y1="-0.451" y2="1.462" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" y1="-1.396" y2="6.586" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="instagram" transform="translate(9 9)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -9, -9)">
+      <path id="Path_53-2" data-name="Path 53" class="cls-1" d="M22.721,0H9.641A9.652,9.652,0,0,0,0,9.641v13.08a9.652,9.652,0,0,0,9.641,9.641h13.08a9.652,9.652,0,0,0,9.641-9.641V9.641A9.652,9.652,0,0,0,22.721,0Zm6.385,22.721a6.385,6.385,0,0,1-6.385,6.385H9.641a6.385,6.385,0,0,1-6.385-6.385V9.641A6.385,6.385,0,0,1,9.641,3.256h13.08a6.385,6.385,0,0,1,6.385,6.385v13.08Z" transform="translate(9 9)"/>
+    </g>
+    <path id="Path_54" data-name="Path 54" class="cls-2" d="M141.37,133a8.37,8.37,0,1,0,8.37,8.37A8.38,8.38,0,0,0,141.37,133Zm0,13.484a5.114,5.114,0,1,1,5.114-5.114A5.114,5.114,0,0,1,141.37,146.484Z" transform="translate(-125.189 -125.189)"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-3" cx="2.006" cy="2.006" r="2.006" transform="translate(22.562 5.868)"/>
+  </g>
+</svg>
