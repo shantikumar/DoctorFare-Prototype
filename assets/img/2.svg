@@ -14,7 +14,7 @@
     <filter id="_2" x="0" y="0" width="185" height="368" filterUnits="userSpaceOnUse">
       <feOffset dx="8" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#fff" flood-opacity="0.2"/>
+      <feFlood flood-color="#212121" flood-opacity="0.2"/>
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>

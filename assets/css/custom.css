@@ -182,10 +182,14 @@
 }
 .jumbotron h1.display-6 {
     font-size: 2.15rem;
+    text-shadow: 0 2px 3px #0000004d;
 }
 
 .j-height {
-    height: 502px;
+    height: 530px;
+}
+.jumbotron .input-group.input-group-lg>.form-control {
+    font-size: 1rem;
 }
 .jumbotron .input-group.input-group-lg .input-group-append>.btn,
 .jumbotron .input-group.input-group-lg>.form-control {
@@ -199,13 +203,35 @@
     padding: 0.2rem 0.8rem;
 }
 .jumbotron .input-group.input-group-lg>.form-control.search {
-    background: url('../img/ic_search_24px.svg') no-repeat left center;
+    background-image: url('../img/ic_search_24px.svg');
+    background-repeat: no-repeat;
+    background-size: 10% 50%;
+    background-position: left;
     padding-left: 4rem;
-    background-blend-mode: multiply;
 }
 .jumbotron .p-searches {
     position: absolute;
+    height: 40px;
     bottom: 0;
+    left: 0;
+    font-size: 0.7rem;
+    width: 100%;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.16);
+}
+.jumbotron .p-searches .list-inline-item:first-child {
+    padding-left: 5rem;
+}
+/*
+.section-title h3 {
+    margin-bottom: 0;
+}
+*/
+
+.title-underline {
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #F47280;
+    display: inline-block;
 }
 
 
