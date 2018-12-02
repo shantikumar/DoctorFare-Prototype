@@ -204,6 +204,14 @@
     margin-top: -6rem;
 }
 
+.mb-show ul.list-unstyled li {
+    margin-top: 4rem;
+}
+
+.ct-drop .nav-link.dropdown-toggle::after {
+    display: none;
+}
+
 .newsletter {
     position: relative;
     top: 3rem;
@@ -221,11 +229,11 @@ footer .main {
     padding-top: 5rem;
 }
 footer .lead {
-    font-weight: 300;
+    font-weight: 600;
 }
 footer ul li a {
-    color: #000;
-    text-decoration: underline;
+    color: #003977;
+    font-size: 0.9rem;
 }
 footer ul li a.btn {
     text-decoration: none;
