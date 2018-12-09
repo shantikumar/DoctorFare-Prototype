@@ -334,6 +334,12 @@ footer .terms ul {
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+    .navbar {
+        justify-content: flex-start !important;
+    }
+    .navbar-brand {
+        margin: 0 0 0 1rem;
+    }
     .navbar-brand>img {
         width: 160px;
         height: 100%;
