@@ -334,12 +334,6 @@ footer .terms ul {
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-    .navbar {
-        justify-content: flex-start !important;
-    }
-    .navbar-brand {
-        margin: 0 0 0 1rem;
-    }
     .navbar-brand>img {
         width: 160px;
         height: 100%;
@@ -349,6 +343,40 @@ footer .terms ul {
     }
     .navbar-light .navbar-toggler-icon {
         background-image: url(../img/ic_menu_24px.svg);
+    }
+    
+    .full-modal.modal-dialog {
+        margin: 0;
+    }
+    .full-modal.modal-dialog .modal-content {
+        border-radius: 0;
+        border: none;
+        height: calc(100vh - 0px);
+        overflow: auto;
+    }
+    .full-modal.modal-dialog .modal-content .modal-header {
+        border-bottom-color: transparent;
+    }
+    .full-modal.modal-dialog .modal-content .modal-header .modal-title>img {
+        width: 160px;
+        height: 100%;
+    }
+    .full-modal.modal-dialog .modal-content .modal-header .close {
+        width: 54px;
+        height: 38px;
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 300;
+        opacity: 1;
+        line-height: 0;
+    }
+    .full-modal.modal-dialog .modal-content .modal-body ul.list-unstyled {
+        line-height: 5;
+    }
+    .full-modal.modal-dialog .modal-content .modal-body ul.list-unstyled a {
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
 } 
 

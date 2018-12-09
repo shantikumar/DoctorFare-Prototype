@@ -31,24 +31,25 @@
     <!--  Navigation  -->
     
     <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <a class="navbar-brand" href="#">
             <img src="assets/img/logo_b.svg" alt="DoctorFare">
         </a>
-        <div class="switch ml-auto d-block d-sm-none">
-            <input name="radio" type="radio" value="optionone" id="optionone" checked>
-            <label for="optionone">EN</label>
-
-            <input name="radio" type="radio" value="optiontwo" id="optiontwo">
-            <label for="optiontwo" class="right">ES</label>
-
-            <span aria-hidden="true"></span>
-        </div>
+        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                <li class="nav-item d-block d-sm-none">
+                    <form class="form-inline">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login&#47;Register</a>
                 </li>
@@ -82,7 +83,37 @@
     </nav>
 
     
+    <!--  Fixed bottom  -->
+    <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none shadow">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+    </nav>
     
+    
+    
+    <!--  Navbar Menu's  -->
+    <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true">
+        <div class="modal-dialog full-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="navbarModalLabel">
+                        <img src="assets/img/logo_b.svg" alt="DoctorFare">
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-unstyled">
+                        <li><a href="">Search</a></li>
+                        <li><a href="">Login&#47;Register</a></li>
+                        <li><a href="">How it Works&#63;</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -112,6 +143,8 @@
                 $(indicator).removeClass('right');
               }
             });
+            
+            $('#navbarModal').modal('handleUpdate');
         });
     
     </script>
