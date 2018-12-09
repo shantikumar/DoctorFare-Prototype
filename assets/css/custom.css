@@ -97,12 +97,8 @@
 }
 
 .jumbotron {
-    background-color: transparent;
-    background-image: url('../img/banner.svg');
-    background-repeat: no-repeat;
-    background-position: right; 
-    background-size: 47% 100%;
-}
+        background-color: transparent;
+    }
 .jumbotron h1.display-6 {
     font-size: 2.15rem;
     text-shadow: 0 2px 3px #0000004d;
@@ -118,6 +114,9 @@
 .jumbotron .input-group.input-group-lg>.form-control {
     font-size: 1rem;
 }
+
+
+
 .jumbotron .input-group.input-group-lg .input-group-append>.btn,
 .jumbotron .input-group.input-group-lg>.form-control {
     height: 50px;
@@ -303,8 +302,34 @@ footer .terms ul {
     font-size: 1rem;
 }
 
+.jumbotron-text {
+    margin-bottom: 3rem;
+}
 
-
+.form-search .form-row .form-group {
+    margin: 0;
+}
+.form-search .form-row .form-control {
+    height: 50px;
+    border: 0 solid #ced4da;
+    border-radius: 0;
+}
+.form-search .form-row .search>.form-control {
+    background-image: url(../img/ic_search_24px.svg);
+    background-repeat: no-repeat;
+    background-size: 10% 50%;
+    background-position: left;
+    padding-left: 4rem;
+    border-right: 1px solid #ced4da;
+}
+.form-search .form-row .location .gps {
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+    border: none;
+}
+.form-search .form-row .form-btn-search .btn-df {
+    line-height: 2.25rem;
+}
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 /*// No media query for `xs` since this is the default in Bootstrap*/
@@ -329,11 +354,30 @@ footer .terms ul {
     .switch {
         margin: 0 1.5rem 0 !important;
     }
+    .jumbotron {
+        background-image: url('../img/banner.svg');
+        background-repeat: no-repeat;
+        background-position: right; 
+        background-size: 47% 100%;
+    }
+    
+    
 }
 
 
 /*// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+    .btn-df {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .jumbotron .jumbotron-text>h1 {
+        font-size: 2rem;
+        text-shadow: 0 2px 3px #0000004d;
+    }
+    .jumbotron-text p {
+        font-size: 0.9rem !important;
+    }
     .navbar-brand>img {
         width: 160px;
         height: 100%;
@@ -372,11 +416,72 @@ footer .terms ul {
         line-height: 0;
     }
     .full-modal.modal-dialog .modal-content .modal-body ul.list-unstyled {
-        line-height: 5;
+        line-height: 4;
     }
     .full-modal.modal-dialog .modal-content .modal-body ul.list-unstyled a {
         font-size: 1.2rem;
         padding: 0 1rem;
+    }
+    
+    .form-search {
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+    .form-search .form-row .form-group {
+        margin: 0;
+    }
+    .form-search .form-row .form-control {
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .form-search .form-row .location .form-control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .form-search .form-row .search>.form-control {
+        background-image: url(../img/ic_search_24px.svg);
+        background-repeat: no-repeat;
+        background-size: 15% 50%;
+        background-position: left;
+        padding-left: 3rem;
+        border-right: 1px solid #ced4da;
+    }
+    .form-search .input-group-append .gps {
+        padding: 0 1rem;
+        line-height: 0;
+        height: 50px;
+        border: 1px solid #ced4da !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    .jumbotron .p-searches {
+        position: relative;
+        height: auto;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    .jumbotron .p-searches .list-inline-item:first-child {
+        display: block;
+        padding: 0;
+    }
+    .jumbotron .p-searches .list-inline-item {
+        margin-right: 0;
+    }
+    
+    .footer-fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .footer-fixed-bottom.shadow {
+        box-shadow: 0 -0.2rem 0.5rem rgba(0,0,0,.10)!important;
     }
 } 
 

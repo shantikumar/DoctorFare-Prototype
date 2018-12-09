@@ -40,21 +40,8 @@
         
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item d-block d-sm-none">
-                    <form class="form-inline">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                            </div>
-                        </div>
-                    </form>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login&#47;Register</a>
-                </li>
-                <li class="nav-item d-block d-sm-none">
-                    <a class="nav-link" href="#">How it works&#63;</a>
                 </li>
                 <li class="nav-item d-none d-sm-block">
                     <div class="switch">
@@ -83,15 +70,113 @@
     </nav>
 
     
-    <!--  Fixed bottom  -->
-    <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none shadow">
+    <main>
+        
+        <!--    Search    -->
+        <div class="jumbotron j-height">
+            <div class="jumbotron-text">
+                <!-- <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1> -->
+                <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1>
+                <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
+            </div>
+            <div class="form-search shadow-lg bg-white rounded p-3">
+                <div class="form-row">
+                    <div class="search form-group col-md-6">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required>
+                    </div>
+                    <div class="location input-group col-md-5">
+                        <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
+                        <div class="input-group-append">
+                            <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
+                                <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-btn-search form-group col-md-1">
+                        <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-inline p-searches">
+                <li class="list-inline-item"><strong>Popular searches:</strong></li>
+                <li class="list-inline-item"><a href="">Dermatologist,</a></li>
+                <li class="list-inline-item"><a href="">Paediatrician,</a></li>
+                <li class="list-inline-item"><a href="">Gynaecologist/Obstetrician,</a></li>
+                <li class="list-inline-item"><a href="">Orthopaedic Surgery</a></li>
+            </ul>
+        </div>
+        
+        
+        <!--    How it works    
+        <div class="container-fluid mt-md-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2 class="font-weight-light">How it works</h2>
+                        <p class="title-underline"></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row dy-sections">
+                <div class="col-lg-6 dy-section-first">
+                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
+                        <img src="assets/img/1.svg" width="300" height="100%">
+                        <div class="inner-section">
+                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="dir-arrow">
+                    <span class="bottom"><img src="assets/img/curve_arrow_down.svg" width="240" height="100%"></span>
+                </div>
+                
+                <div class="col-lg-5 offset-lg-1 dy-section-third">
+                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
+                        <img src="assets/img/3.svg" width="200" height="100%">
+                        <div class="inner-section">
+                            <p class="lead font-weight-bold">Confirm &amp; Get notified of your appointment </p>
+                            <p class="text-secondary">You will receive confirmation of your appointment time by notification and/or email.</p>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="dir-arrow">
+                    <span class="top"><img src="assets/img/curve_arrow_top.svg" width="240" height="100%"></span>
+                </div>
+                
+                <div class="col-lg-6 dy-section-second">
+                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
+                        <img src="assets/img/2.svg" width="200" height="100%">
+                        <div class="inner-section">
+                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+                        </div>
+                    </section>
+                </div>
+                
+                
+            </div>
+        
+        </div>
+        -->
+    </main>
+    
+    
+    
+    <!--  Mobile Fixed bottom  -->
+    <nav class="footer-fixed-bottom navbar navbar-light bg-light d-block d-sm-none shadow">
         <a class="navbar-brand" href="#">Fixed bottom</a>
     </nav>
     
     
     
     <!--  Navbar Menu's  -->
-    <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true">
+    <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog full-modal" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -104,11 +189,11 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-unstyled">
-                        <li><a href="">Search</a></li>
+                        <li><a href="">Search for doctors</a></li>
                         <li><a href="">Login&#47;Register</a></li>
                         <li><a href="">How it Works&#63;</a></li>
                         <li><a href="">FAQ</a></li>
-                        <li><a href="">About</a></li>
+                        <li><a href="">About DoctorFare</a></li>
                     </ul>
                 </div>
             </div>
@@ -120,18 +205,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     <script>
-    //Change pos/background/padding/add shadow on nav when scroll event happens 
-    $(function(){
-        var navbar = $('.navbar');
+        //Change pos/background/padding/add shadow on nav when scroll event happens 
+        $(function(){
+            var navbar = $('.navbar');
 
-        $(window).scroll(function(){
-            if($(window).scrollTop() <= 320){
-                navbar.removeClass('navbar-scroll');
-            } else {
-                navbar.addClass('navbar-scroll');
-            }
+            $(window).scroll(function(){
+                if($(window).scrollTop() <= 320){
+                    navbar.removeClass('navbar-scroll');
+                } else {
+                    navbar.addClass('navbar-scroll');
+                }
+            });
         });
-    });
         
         
         $( document ).ready(function() {
