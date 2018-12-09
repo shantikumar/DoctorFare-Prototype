@@ -7,6 +7,11 @@
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+
+
+
+
+
 .df-bg-primary {
     background-color: #ffa4ae;
 }
@@ -30,15 +35,17 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+
 .switch {
     text-align: center;
-  background-color: #F4F4F4;
-  width: 120px;
-  display: inline-block;
-  border-radius: 1000px;
-  height: 40px;
-  position: relative;
-  zoom: 1;
+    background-color: #F4F4F4;
+    width: 120px;
+    display: inline-block;
+    border-radius: 1000px;
+    height: 40px;
+    position: relative;
+    zoom: 1;
 }
 .switch:before, .switch:after {
   content: " ";
@@ -299,17 +306,55 @@ footer .terms ul {
 
 
 
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query for `xs` since this is the default in Bootstrap*/
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    
+}
 
-// Medium devices (tablets, 768px and up)
+/*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
+/*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .navbar-brand>img {
+        width: 260px;
+        height: 100%;
+    }
+    .switch {
+        margin: 0 1.5rem 0 !important;
+    }
+}
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    .navbar-brand>img {
+        width: 160px;
+        height: 100%;
+    }
+    .navbar-toggler {
+        border: 0 solid rgba(0,0,0,.1);
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/ic_menu_24px.svg);
+    }
+} 
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px)  ... 
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px)  ... 
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px)  ... 
+
+/*
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width*/
