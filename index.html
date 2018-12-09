@@ -71,42 +71,69 @@
 
     
     <main>
-        
         <!--    Search    -->
-        <div class="jumbotron j-height">
-            <div class="jumbotron-text">
-                <!-- <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1> -->
-                <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1>
-                <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
-            </div>
-            <div class="form-search shadow-lg bg-white rounded p-3">
-                <div class="form-row">
-                    <div class="search form-group col-md-6">
-                        <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required>
-                    </div>
-                    <div class="location input-group col-md-5">
-                        <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
-                        <div class="input-group-append">
-                            <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
-                                <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
-                            </button>
+        <section class="shadow-df">
+            <div class="jumbotron j-height">
+                <div class="jumbotron-text">
+                    <!-- <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1> -->
+                    <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1>
+                    <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
+                </div>
+                <div class="form-search shadow-lg bg-white rounded p-3">
+                    <div class="form-row">
+                        <div class="search form-group col-md-6">
+                            <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required>
+                        </div>
+                        <div class="location input-group col-md-5">
+                            <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
+                            <div class="input-group-append">
+                                <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
+                                    <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-btn-search form-group col-md-1">
+                            <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
                         </div>
                     </div>
-                    
-                    <div class="form-btn-search form-group col-md-1">
-                        <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
-                    </div>
+                </div>
+                <ul class="list-inline p-searches">
+                    <li class="list-inline-item"><strong>Popular searches:</strong></li>
+                    <li class="list-inline-item"><a href="">Dermatologist,</a></li>
+                    <li class="list-inline-item"><a href="">Paediatrician,</a></li>
+                    <li class="list-inline-item"><a href="">Gynaecologist/Obstetrician,</a></li>
+                    <li class="list-inline-item"><a href="">Orthopaedic Surgery</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <div class="section-title text-center">
+                <h2 class="font-weight-light">How it works</h2>
+                <p class="title-underline"></p>
+            </div>
+            <div class="dy-sections row">
+                <div class="col-lg-6 dy-section-first">
+                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
+                        <img src="assets/img/1.svg" width="300" height="100%">
+                        <div class="inner-section">
+                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-5 offset-lg-1 dy-section-second">
+                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
+                        <img src="assets/img/2.svg" width="200" height="100%">
+                        <div class="inner-section">
+                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+                        </div>
+                    </section>
                 </div>
             </div>
-            <ul class="list-inline p-searches">
-                <li class="list-inline-item"><strong>Popular searches:</strong></li>
-                <li class="list-inline-item"><a href="">Dermatologist,</a></li>
-                <li class="list-inline-item"><a href="">Paediatrician,</a></li>
-                <li class="list-inline-item"><a href="">Gynaecologist/Obstetrician,</a></li>
-                <li class="list-inline-item"><a href="">Orthopaedic Surgery</a></li>
-            </ul>
-        </div>
-        
+        </section>
         
         <!--    How it works    
         <div class="container-fluid mt-md-2">
@@ -188,6 +215,16 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <p>Change language</p>
+                    <div class="switch mb-4">
+                        <input name="radio" type="radio" value="optionone" id="optionEN" checked>
+                        <label for="optionEN">EN</label>
+
+                        <input name="radio" type="radio" value="optiontwo" id="optionES">
+                        <label for="optionES" class="right">ES</label>
+
+                        <span aria-hidden="true"></span>
+                    </div>
                     <ul class="list-unstyled">
                         <li><a href="">Search for doctors</a></li>
                         <li><a href="">Login&#47;Register</a></li>

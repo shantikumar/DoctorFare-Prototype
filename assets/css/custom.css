@@ -137,22 +137,13 @@
 }
 .jumbotron .p-searches {
     position: absolute;
-    height: 40px;
     bottom: 0;
-    left: 0;
+    left: 2rem;
     font-size: 0.7rem;
 }
 .shadow-df {
     box-shadow: 0 13px 20px rgba(0, 0, 0, 0.06);
 }
-.jumbotron .p-searches .list-inline-item:first-child {
-    padding-left: 5rem;
-}
-/*
-.section-title h3 {
-    margin-bottom: 0;
-}
-*/
 
 .title-underline {
     width: 5rem;
@@ -178,11 +169,13 @@
 .dy-sections .dy-section-third section >img {
     top: -51px;
 }
+/*
 .dy-sections .dy-section-second {
     position: relative;
     left: 20rem;
     top: -5rem;
 }
+*/
 .dy-sections .dy-section-third {
     margin-top: 5rem;
 }
@@ -359,6 +352,7 @@ footer .terms ul {
         background-repeat: no-repeat;
         background-position: right; 
         background-size: 47% 100%;
+        position: relative;
     }
     
     
@@ -371,6 +365,7 @@ footer .terms ul {
         font-size: 1.5rem;
         font-weight: 600;
     }
+    
     .jumbotron .jumbotron-text>h1 {
         font-size: 2rem;
         text-shadow: 0 2px 3px #0000004d;
@@ -414,6 +409,9 @@ footer .terms ul {
         font-weight: 300;
         opacity: 1;
         line-height: 0;
+    }
+    .full-modal.modal-dialog .modal-content .modal-body .switch {
+        width: 100%;
     }
     .full-modal.modal-dialog .modal-content .modal-body ul.list-unstyled {
         line-height: 4;
@@ -464,6 +462,8 @@ footer .terms ul {
         height: auto;
         margin-top: 1.5rem;
         text-align: center;
+        line-height: 1.5rem;
+        left: 0;
     }
     .jumbotron .p-searches .list-inline-item:first-child {
         display: block;
