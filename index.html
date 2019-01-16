@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DoctorFare : Landing</title>
+    <title>DoctorFare : Book your next doctor appointment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     
@@ -31,12 +31,12 @@
     <!--  Navigation  -->
     
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/logo_b.svg" alt="DoctorFare">
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand d-sm-block d-md-none d-lg-none d-xl-none" href="#">
+            <img src="assets/img/logo_b.svg" alt="DoctorFare">
+        </a>
         
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -45,7 +45,7 @@
                 </li>
                 <li class="nav-item d-none d-sm-block">
                     <div class="switch">
-                        <input name="radio" type="radio" value="optionone" id="optionone" checked>
+                        <input name="radio" type="radio" value="optionone" id="optionone" checked="checked">
                         <label for="optionone">EN</label>
 
                         <input name="radio" type="radio" value="optiontwo" id="optiontwo">
@@ -67,24 +67,39 @@
                 </li>
             </ul>
         </div>
+
+        <form class="nav-scroll-form-show flex-row ml-md-auto d-none d-md-flex">
+            <div class="input-group input-group-lg">
+                <input type="text" aria-label="Search" placeholder="Search for speciality, condition, doctor name ..." class="search form-control col-lg-6">
+                <input type="text" aria-label="Location" placeholder="city, state or ZIP..." class="location form-control col-md-4 border-left">
+                <div class="input-group-append">
+                    <button class="btn btn-light" type="button">
+                        <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
+                    </button>
+                    <button class="btn btn-df" type="button" id="button-addon2">search</button>
+                </div>
+            </div>
+        </form>
+
     </nav>
 
     
     <main>
         <!--    Search    -->
-        <section class="shadow-df">
+        <section class="container">
             <div class="jumbotron j-height">
                 <div class="jumbotron-text">
-                    <!-- <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1> -->
-                    <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1>
+                    <img src="assets/img/logo_b.svg" width="440" height="80" alt="DoctorFare" class="d-none d-lg-block">
+                    <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1>
+                    <!-- <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1> -->
                     <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
                 </div>
                 <div class="form-search shadow-lg bg-white rounded p-3">
                     <div class="form-row">
                         <div class="search form-group col-md-6">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required>
+                            <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required autofocus>
                         </div>
-                        <div class="location input-group col-md-5">
+                        <div class="location input-group col-md-4">
                             <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
                             <div class="input-group-append">
                                 <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
@@ -93,7 +108,7 @@
                             </div>
                         </div>
 
-                        <div class="form-btn-search form-group col-md-1">
+                        <div class="form-btn-search form-group col-md-2">
                             <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
                         </div>
                     </div>
@@ -108,91 +123,208 @@
             </div>
         </section>
         
-        <section>
-            <div class="section-title text-center">
+        
+        <!-- Shadow Seperator -->
+        <p class="shadow-df">&nbsp;</p>
+
+
+
+        <!--    How it Works    -->
+        <section class="section-height mb-lg-5">
+            <div class="section-title text-center mb-lg-5">
                 <h2 class="font-weight-light">How it works</h2>
                 <p class="title-underline"></p>
             </div>
-            <div class="dy-sections row">
-                <div class="col-lg-6 dy-section-first">
-                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
-                        <img src="assets/img/1.svg" width="300" height="100%">
-                        <div class="inner-section">
-                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
-                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+            <div class="container">
+                <div class="row dy-sections">
+                    <div class="col-lg-5 dy-section-first">
+                        <section class="first-step d-flex justify-content-start align-items-start">
+                            <img src="assets/img/1.svg" width="500" height="100%">
+                            <div class="inner-section">
+                                <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+                                <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+                            </div>
+                        </section>
+                        <div class="dir-arrow d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                            <span class="bottom"><img src="assets/img/curve_arrow_down.svg" width="240" height="100%"></span>
                         </div>
-                    </section>
+                    </div>
+                    <div class="col-lg-5 dy-section-second">
+                        <section class="first-step d-flex justify-content-start align-items-start">
+                            <img src="assets/img/2.svg" width="400" height="100%">
+                            <div class="inner-section">
+                                <p class="lead font-weight-bold">Creating an account is easy and quick</p>
+                                <p class="text-secondary">Just provide your basic personal information and you’re set for your evaluation!</p>
+                            </div>
+                        </section>
+                        <div class="dir-arrow d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                            <span class="top"><img src="assets/img/curve_arrow_top.svg" width="240" height="100%"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 dy-section-third">
+                        <section class="first-step d-flex flex-fill">
+                            <img src="assets/img/3.svg" width="400" height="100%">
+                            <div class="inner-section">
+                                <p class="lead font-weight-bold">Confirm & Get notified of your appointment</p>
+                                <p class="text-secondary">You will receive confirmation of your appointment time by notification and/or email.</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1 dy-section-second">
-                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
-                        <img src="assets/img/2.svg" width="200" height="100%">
-                        <div class="inner-section">
-                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
-                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
-                        </div>
-                    </section>
+
+            </div>
+        </section>
+
+        <!-- Shadow Seperator -->
+        <p class="shadow-df">&nbsp;</p>
+
+        <!--    Mobile Showcase     -->
+        <section class="container-fluid">
+            <div class="row bg-dark-df text-dark mb-show">
+                <div class="col-lg-4">
+                    <ul class="list-unstyled left-items">
+                        <li class="list-inline-item">
+                            <h4>Great Interface</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                        </li>
+                        <li class="list-inline-item">
+                            <h4>Available On All Your Devices</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="m-screen text-center">
+                        <img src="assets/img/df_mobile_screen.svg" width="251" height="502">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-unstyled">
+                        <li class="list-inline-item right-items">
+                            <h4>Easy to Customise</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                        </li>
+                        <li class="list-inline-item">
+                            <h4>Free Updates</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center mt-md-5 pb-md-5">
+                    <h3>Get the free app</h3>
+                    <p>Available on iPhone, iPad and all Android devices from 5.5</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <img src="assets/img/ios_logo.svg" width="168" height="50">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <img src="assets/img/android_logo.svg" width="168" height="50">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
+
         
-        <!--    How it works    
-        <div class="container-fluid mt-md-2">
+
+
+        <section class="container mt-lg-5 mb-lg-5 pb-md-5">
+            <div class="section-header text-center mb-lg-5">
+                <img src="assets/img/medical-kit.svg" width="64" height="64" align="Browse doctors by top specialties">
+                <h3 class="mt-lg-1">Browse doctors by top specialties</h3>
+            </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="section-title text-center">
-                        <h2 class="font-weight-light">How it works</h2>
-                        <p class="title-underline"></p>
-                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Addiction Specialists</a></li>
+                        <li><a href="">Adolescent Specialists</a></li>
+                        <li><a href="">Allergists</a></li>
+                        <li><a href="">Anaesthesiologists</a></li>
+                        <li><a href="">Aerospace Medicine</a></li>
+                        <li><a href="">Physicians</a></li>
+                        <li><a href="">Bariatric Specialists</a></li>
+                        <li><a href="">Cardiologists</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Hospice &amp; Palliative</a></li>
+                        <li><a href="">Specialists</a></li>
+                        <li><a href="">Hospitalists</a></li>
+                        <li><a href="">Infectious Disease</a></li>
+                        <li><a href="">Nephrologists</a></li>
+                        <li><a href="">Neurological Surgeons</a></li>
+                        <li><a href="">Neurologists</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Paediatric Specialists</a></li>
+                        <li><a href="">Psychiatrists</a></li>
+                        <li><a href="">Pulmonologists Radiation</a></li>
+                        <li><a href="">Oncologists</a></li>
+                        <li><a href="">Radiologists</a></li>
+                        <li><a href="">Rheumatologists</a></li>
+                        <li><a href="">Medical Oncologists </a></li>
+                        <li><a href="">Paediatric Radiologists</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Medical Toxicologists</a></li>
+                        <li><a href="">Paediatric Allergists and Immunologists</a></li>
+                        <li><a href="">Paediatric Emergency</a></li>
+                        <li><a href="">Medicine Physicians</a></li>
+                        <li><a href="">Clinical & Laboratory </a></li>
+                        <li><a href="">Immunologists</a></li>
+                        <li><a href="">Dermatopathologists</a></li>
+                    </ul>
                 </div>
             </div>
+        </section>
 
-
-            <div class="row dy-sections">
-                <div class="col-lg-6 dy-section-first">
-                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
-                        <img src="assets/img/1.svg" width="300" height="100%">
-                        <div class="inner-section">
-                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
-                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
-                        </div>
-                    </section>
-                </div>
-                
-                <div class="dir-arrow">
-                    <span class="bottom"><img src="assets/img/curve_arrow_down.svg" width="240" height="100%"></span>
-                </div>
-                
-                <div class="col-lg-5 offset-lg-1 dy-section-third">
-                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
-                        <img src="assets/img/3.svg" width="200" height="100%">
-                        <div class="inner-section">
-                            <p class="lead font-weight-bold">Confirm &amp; Get notified of your appointment </p>
-                            <p class="text-secondary">You will receive confirmation of your appointment time by notification and/or email.</p>
-                        </div>
-                    </section>
-                </div>
-                
-                <div class="dir-arrow">
-                    <span class="top"><img src="assets/img/curve_arrow_top.svg" width="240" height="100%"></span>
-                </div>
-                
-                <div class="col-lg-6 dy-section-second">
-                    <section class="first-step d-flex justify-content-start align-items-start mt-md-5">
-                        <img src="assets/img/2.svg" width="200" height="100%">
-                        <div class="inner-section">
-                            <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
-                            <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
-                        </div>
-                    </section>
-                </div>
-                
-                
-            </div>
         
-        </div>
-        -->
+
     </main>
     
+    <footer class="container">
+        <section class="section-footer">
+            <img src="assets/img/logo_b.svg" width="306" height="53" alt="DoctorFare" class="mb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-1">
+                    <ul class="list-unstyled">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-1">
+                    <ul class="list-unstyled">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Members Terms &amp; Conditions</a></li>
+                        <li><a href="">Disclosures</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-1">
+                    <ul class="list-unstyled">
+                        <li><p class="lead">Are you a doctor&#63;</p></li>
+                        <li><button type="button" class="btn btn-primary">Claim your free profile</button></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-1">
+                    <ul class="list-unstyled text-right">
+                        <li><a href=""><img src="assets/img/android_logo.svg" width="168" height="50" alt="DoctorFare Android App"></a></li>
+                        <li><a href=""><img src="assets/img/ios_logo.svg" width="168" height="50" alt="DoctorFare IOS App"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
     
     
     <!--  Mobile Fixed bottom  -->
@@ -215,7 +347,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Change language</p>
+                    <p>Language</p>
                     <div class="switch mb-4">
                         <input name="radio" type="radio" value="optionone" id="optionEN" checked>
                         <label for="optionEN">EN</label>
