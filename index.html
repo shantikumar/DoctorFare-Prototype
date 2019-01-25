@@ -30,15 +30,17 @@
     
     <!--  Navigation  -->
     
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand d-sm-block d-md-none d-lg-none d-xl-none" href="#">
-            <img src="assets/img/logo_b.svg" alt="DoctorFare">
+        
+
+        <a class="navbar-brand nav-brand-scroll pl-3" href="#">
+            <img src="assets/img/logo_b.svg" width="180" height="48" alt="DoctorFare">
         </a>
         
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="collapse navbar-collapse nav-scroll-link-hide" id="navbarToggler">
             <ul class="navbar-nav ml-auto my-2 my-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Login&#47;Register</a>
@@ -68,7 +70,7 @@
             </ul>
         </div>
 
-        <form class="nav-scroll-form-show flex-row ml-md-auto d-none d-md-flex">
+        <form class="nav-scroll-form-show flex-row ml-lg-auto d-lg-flex d-none">
             <div class="input-group input-group-lg">
                 <input type="text" aria-label="Search" placeholder="Search for speciality, condition, doctor name ..." class="search form-control col-lg-6">
                 <input type="text" aria-label="Location" placeholder="city, state or ZIP..." class="location form-control col-md-4 border-left">
@@ -124,7 +126,7 @@
         </section>
         
         
-        <!-- Shadow Seperator -->
+        <!--    Shadow Seperator    -->
         <p class="shadow-df">&nbsp;</p>
 
 
@@ -175,8 +177,8 @@
             </div>
         </section>
 
-        <!-- Shadow Seperator -->
-        <p class="shadow-df">&nbsp;</p>
+        <!--    Shadow Seperator    -->
+        <!-- <p class="shadow-df">&nbsp;</p> -->
 
         <!--    Mobile Showcase     -->
         <section class="container-fluid">
@@ -231,15 +233,15 @@
 
         
 
-
-        <section class="container mt-lg-5 mb-lg-5 pb-md-5">
+        <!--    Specialities    -->
+        <section class="container mt-lg-5 mb-lg-5 pb-md-5 df-lists d-none d-sm-block">
             <div class="section-header text-center mb-lg-5">
                 <img src="assets/img/medical-kit.svg" width="64" height="64" align="Browse doctors by top specialties">
                 <h3 class="mt-lg-1">Browse doctors by top specialties</h3>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-2">
-                    <ul class="list-unstyled">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <ul class="list-unstyled list-spe">
                         <li><a href="">Addiction Specialists</a></li>
                         <li><a href="">Adolescent Specialists</a></li>
                         <li><a href="">Allergists</a></li>
@@ -250,8 +252,8 @@
                         <li><a href="">Cardiologists</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-2">
-                    <ul class="list-unstyled">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <ul class="list-unstyled list-spe">
                         <li><a href="">Hospice &amp; Palliative</a></li>
                         <li><a href="">Specialists</a></li>
                         <li><a href="">Hospitalists</a></li>
@@ -261,8 +263,8 @@
                         <li><a href="">Neurologists</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-2">
-                    <ul class="list-unstyled">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <ul class="list-unstyled list-spe">
                         <li><a href="">Paediatric Specialists</a></li>
                         <li><a href="">Psychiatrists</a></li>
                         <li><a href="">Pulmonologists Radiation</a></li>
@@ -273,8 +275,8 @@
                         <li><a href="">Paediatric Radiologists</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-2">
-                    <ul class="list-unstyled">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <ul class="list-unstyled list-spe">
                         <li><a href="">Medical Toxicologists</a></li>
                         <li><a href="">Paediatric Allergists and Immunologists</a></li>
                         <li><a href="">Paediatric Emergency</a></li>
@@ -291,11 +293,11 @@
 
     </main>
     
-    <footer class="container">
-        <section class="section-footer">
-            <img src="assets/img/logo_b.svg" width="306" height="53" alt="DoctorFare" class="mb-3">
+    <footer>
+        <section class="section-footer container">
+            <img src="assets/img/logo_b.svg" width="306" height="53" alt="DoctorFare" class="mb-3 d-none d-sm-block">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-1">
+                <div class="col-lg-3 col-md-3 d-none d-sm-block">
                     <ul class="list-unstyled">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
@@ -303,34 +305,51 @@
                         <li><a href="">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-1">
+                <div class="col-lg-3 col-md-3 d-none d-sm-block">
                     <ul class="list-unstyled">
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Members Terms &amp; Conditions</a></li>
                         <li><a href="">Disclosures</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-1">
-                    <ul class="list-unstyled">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <ul class="list-unstyled sm-text-center">
                         <li><p class="lead">Are you a doctor&#63;</p></li>
                         <li><button type="button" class="btn btn-primary">Claim your free profile</button></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-1">
+                <div class="col-lg-3 col-md-3 d-none d-sm-block">
                     <ul class="list-unstyled text-right">
-                        <li><a href=""><img src="assets/img/android_logo.svg" width="168" height="50" alt="DoctorFare Android App"></a></li>
-                        <li><a href=""><img src="assets/img/ios_logo.svg" width="168" height="50" alt="DoctorFare IOS App"></a></li>
+                        <li><a href=""><img src="assets/img/android_logo.svg" width="128" height="50" alt="DoctorFare Android App"></a></li>
+                        <li><a href=""><img src="assets/img/ios_logo.svg" width="128" height="50" alt="DoctorFare IOS App"></a></li>
                     </ul>
                 </div>
             </div>
+        </section>
+
+
+        <section class="bg-dark-df">
+            <div class="container">
+                <div class="d-flex align-items-start justify-content-between py-2">
+                    <small class="align-self-center">&copy; 2018 - 2019, DoctorFare. All Rights Reserved.</small>
+                
+                    <ul class="d-none d-sm-block list-inline align-self-center copy-text">
+                        <li class="list-inline-item"><small>Follow us &#64;</small></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_facebook.svg" width="32" height="32" alt="DoctorFare Facebook"></a></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_linkedIn.svg" width="32" height="32" class="DoctorFare LinkedIn"></a></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_twitter.svg" width="32" height="32" class="DoctorFare Twitter"></a></li>
+                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_instagram.svg" width="32" height="32" class="DoctorFare Instagram"></a></li>
+                    </ul>
+                </div>
+            </div> 
         </section>
     </footer>
     
     
     <!--  Mobile Fixed bottom  -->
-    <nav class="footer-fixed-bottom navbar navbar-light bg-light d-block d-sm-none shadow">
+    <!-- <div class="footer-fixed-bottom navbar navbar-light bg-light d-block d-sm-none shadow">
         <a class="navbar-brand" href="#">Fixed bottom</a>
-    </nav>
+    </div> -->
     
     
     
@@ -372,36 +391,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
     
-    <script>
-        //Change pos/background/padding/add shadow on nav when scroll event happens 
-        $(function(){
-            var navbar = $('.navbar');
-
-            $(window).scroll(function(){
-                if($(window).scrollTop() <= 320){
-                    navbar.removeClass('navbar-scroll');
-                } else {
-                    navbar.addClass('navbar-scroll');
-                }
-            });
-        });
-        
-        
-        $( document ).ready(function() {
-            $('.switch label').on('click', function(){
-              var indicator = $(this).parent('.switch').find('span');
-              if ( $(this).hasClass('right') ){
-                    $(indicator).addClass('right');
-              } else {
-                $(indicator).removeClass('right');
-              }
-            });
-            
-            $('#navbarModal').modal('handleUpdate');
-        });
-    
-    </script>
     
 </body>
 </html>
