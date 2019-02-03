@@ -1,6 +1,6 @@
 
 
-$(function(){
+$(function checkSize(){
     var navbar = $('.navbar');
     var navbarBrand = $('.navbar-brand');
     
@@ -12,7 +12,7 @@ $(function(){
             navbar.addClass('navbar-scroll');
             navbarBrand.removeClass('nav-brand-scroll');
         }
-        });
+    });
 });
 
 
@@ -25,6 +25,5 @@ $( document ).ready(function() {
         $(indicator).removeClass('right');
       }
     });
-    
-    $('#navbarModal').modal('handleUpdate');
+    $('.alert').alert();
 });

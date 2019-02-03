@@ -1,398 +1,392 @@
 <!DOCTYPE html>
     <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DoctorFare : Book your next doctor appointment</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
-    <!-- Configured Head Tags  -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/fav_icons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/fav_icons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/fav_icons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/fav_icons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/fav_icons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/fav_icons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/fav_icons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/fav_icons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav_icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="assets/img/fav_icons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav_icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/fav_icons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav_icons/favicon-16x16.png">
-    
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/custom.css">
-</head>
-<body>
-    
-    <!--  Navigation  -->
-    
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
+	<head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>DoctorFare : Book your next doctor appointment</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+	    
+	    <!-- Configured Head Tags  -->
+	    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/fav_icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/img/fav_icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/img/fav_icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/fav_icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/img/fav_icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/fav_icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/img/fav_icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/fav_icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav_icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/img/fav_icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav_icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/fav_icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav_icons/favicon-16x16.png">
+	    
+	    
+	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="assets/css/custom.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white">
+			<button id="navToggleBtn" class="navbar-toggler" type="button" data-toggle="modal" data-target="#navbarModal">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/logo_b.svg" width="180" height="48" alt="DoctorFare">
+			</a>
 
-        <a class="navbar-brand nav-brand-scroll pl-3" href="#">
-            <img src="assets/img/logo_b.svg" width="180" height="48" alt="DoctorFare">
-        </a>
-        
-        <div class="collapse navbar-collapse nav-scroll-link-hide" id="navbarToggler">
-            <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login&#47;Register</a>
-                </li>
-                <li class="nav-item d-none d-sm-block">
-                    <div class="switch">
-                        <input name="radio" type="radio" value="optionone" id="optionone" checked="checked">
-                        <label for="optionone">EN</label>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+	            <ul class="navbar-nav ml-md-auto ml-lg-auto my-2 my-md-0 my-lg-0">
+	                <li class="nav-item">
+	                    <a class="nav-link" href="#">Login&#47;Register</a>
+	                </li>
+	                <li class="nav-item d-none d-sm-block d-md-block">
+	                    <div class="switch">
+	                        <input name="radio" type="radio" value="optionone" id="optionone" checked="checked">
+	                        <label for="optionone">EN</label>
 
-                        <input name="radio" type="radio" value="optiontwo" id="optiontwo">
-                        <label for="optiontwo" class="right">ES</label>
+	                        <input name="radio" type="radio" value="optiontwo" id="optiontwo">
+	                        <label for="optiontwo" class="right">ES</label>
 
-                        <span aria-hidden="true"></span>
-                    </div>
-                </li>
-                <li class="nav-item dropdown ct-drop d-none d-sm-block">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/img/ic_more_vert_24px.svg" width="4" height="16">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+	                        <span aria-hidden="true"></span>
+	                    </div>
+	                </li>
+	                <li class="nav-item dropdown d-none d-sm-block d-md-block">
+	                    <a class="nav-link dropdown-toggle btn btn-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                        <img src="assets/img/ic_more_vert_24px.svg" width="4" height="16">
+	                    </a>
+	                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+	                        <a class="dropdown-item" href="#">Action</a>
+	                        <a class="dropdown-item" href="#">Another action</a>
+	                        <div class="dropdown-divider"></div>
+	                        <a class="dropdown-item" href="#">Something else here</a>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
 
-        <form class="nav-scroll-form-show flex-row ml-lg-auto d-lg-flex d-none">
-            <div class="input-group input-group-lg">
-                <input type="text" aria-label="Search" placeholder="Search for speciality, condition, doctor name ..." class="search form-control col-lg-6">
-                <input type="text" aria-label="Location" placeholder="city, state or ZIP..." class="location form-control col-md-4 border-left">
-                <div class="input-group-append">
-                    <button class="btn btn-light" type="button">
-                        <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
-                    </button>
-                    <button class="btn btn-df" type="button" id="button-addon2">search</button>
-                </div>
-            </div>
-        </form>
+	        <form class="nav-scroll-form-show flex-row ml-lg-auto d-lg-flex d-none">
+	            <div class="input-group input-group-lg">
+	                <input type="text" aria-label="Search" placeholder="Search for speciality, condition, doctor name ..." class="search form-control col-lg-6">
+	                <input type="text" aria-label="Location" placeholder="city, state or ZIP..." class="location form-control col-md-4 border-left">
+	                <div class="input-group-append">
+	                    <button class="btn btn-light" type="button">
+	                        <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
+	                    </button>
+	                    <button class="btn btn-df" type="button" id="button-addon2">search</button>
+	                </div>
+	            </div>
+	        </form>
 
-    </nav>
-
-    
-    <main>
-        <!--    Search    -->
-        <section class="container">
-            <div class="jumbotron j-height">
-                <div class="jumbotron-text">
-                    <img src="assets/img/logo_b.svg" width="440" height="80" alt="DoctorFare" class="d-none d-lg-block">
-                    <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1>
-                    <!-- <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1> -->
-                    <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
-                </div>
-                <div class="form-search shadow-lg bg-white rounded p-3">
-                    <div class="form-row">
-                        <div class="search form-group col-md-6">
-                            <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required autofocus>
-                        </div>
-                        <div class="location input-group col-md-4">
-                            <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
-                            <div class="input-group-append">
-                                <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
-                                    <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="form-btn-search form-group col-md-2">
-                            <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
-                        </div>
-                    </div>
-                </div>
-                <ul class="list-inline p-searches">
-                    <li class="list-inline-item"><strong>Popular searches:</strong></li>
-                    <li class="list-inline-item"><a href="">Dermatologist,</a></li>
-                    <li class="list-inline-item"><a href="">Paediatrician,</a></li>
-                    <li class="list-inline-item"><a href="">Gynaecologist/Obstetrician,</a></li>
-                    <li class="list-inline-item"><a href="">Orthopaedic Surgery</a></li>
-                </ul>
-            </div>
-        </section>
-        
-        
-        <!--    Shadow Seperator    -->
-        <p class="shadow-df">&nbsp;</p>
+		</nav>
 
 
 
-        <!--    How it Works    -->
-        <section class="section-height mb-lg-5">
-            <div class="section-title text-center mb-lg-5">
-                <h2 class="font-weight-light">How it works</h2>
-                <p class="title-underline"></p>
-            </div>
-            <div class="container">
-                <div class="row dy-sections">
-                    <div class="col-lg-5 dy-section-first">
-                        <section class="first-step d-flex justify-content-start align-items-start">
-                            <img src="assets/img/1.svg" width="500" height="100%">
-                            <div class="inner-section">
-                                <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
-                                <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
-                            </div>
-                        </section>
-                        <div class="dir-arrow d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                            <span class="bottom"><img src="assets/img/curve_arrow_down.svg" width="240" height="100%"></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 dy-section-second">
-                        <section class="first-step d-flex justify-content-start align-items-start">
-                            <img src="assets/img/2.svg" width="400" height="100%">
-                            <div class="inner-section">
-                                <p class="lead font-weight-bold">Creating an account is easy and quick</p>
-                                <p class="text-secondary">Just provide your basic personal information and you’re set for your evaluation!</p>
-                            </div>
-                        </section>
-                        <div class="dir-arrow d-none d-sm-none d-md-none d-lg-block d-xl-block">
-                            <span class="top"><img src="assets/img/curve_arrow_top.svg" width="240" height="100%"></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 dy-section-third">
-                        <section class="first-step d-flex flex-fill">
-                            <img src="assets/img/3.svg" width="400" height="100%">
-                            <div class="inner-section">
-                                <p class="lead font-weight-bold">Confirm & Get notified of your appointment</p>
-                                <p class="text-secondary">You will receive confirmation of your appointment time by notification and/or email.</p>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+		<main>
+			<section class="container-fluid">
+	            <div class="jumbotron j-height">
+	                <div class="jumbotron-text">
+	                    <img src="assets/img/logo_b.svg" width="440" height="80" alt="DoctorFare" class="d-none d-lg-block">
+	                    <h1 class="display-6 font-weight-bold">Book your next doctor appointment</h1>
+	                    <!-- <h1 class="display-6 font-weight-bold">Reserve su próxima cita del médico</h1> -->
+	                    <p class="font-weight-light text-secondary">Book your local doctor in 3 simple and easy steps. Get the best care..</p>
+	                </div>
+	                <div class="form-search shadow-lg bg-white rounded">
+	                    <div class="form-row">
+	                        <div class="search form-group col-md-6">
+	                            <input type="text" class="form-control" id="inputCity" placeholder="Search for speciality, condition, doctor name ..." required autofocus>
+	                        </div>
+	                        <div class="location input-group col-md-4">
+	                            <input type="text" class="form-control" placeholder="city, state or ZIP..." aria-label="city, state or ZIP..." aria-describedby="button-gps" required>
+	                            <div class="input-group-append">
+	                                <button class="gps btn btn-outline-secondary" type="button" id="button-gps">
+	                                    <img src="assets/img/ic_gps_fixed_24px.svg" width="22" height="22">
+	                                </button>
+	                            </div>
+	                        </div>
 
-            </div>
-        </section>
+	                        <div class="form-btn-search form-group col-md-2">
+	                            <button class="btn btn-df btn-block" type="button" id="button-search">search</button>
+	                        </div>
+	                    </div>
+	                </div>
+	                <ul class="list-inline p-searches">
+	                    <li class="list-inline-item"><strong>Popular searches:</strong></li>
+	                    <li class="list-inline-item"><a href="">Dermatologist,</a></li>
+	                    <li class="list-inline-item"><a href="">Paediatrician,</a></li>
+	                    <li class="list-inline-item"><a href="">Gynaecologist/Obstetrician,</a></li>
+	                    <li class="list-inline-item"><a href="">Orthopaedic Surgery</a></li>
+	                </ul>
+	            </div>
+	        </section>
 
-        <!--    Shadow Seperator    -->
-        <!-- <p class="shadow-df">&nbsp;</p> -->
-
-        <!--    Mobile Showcase     -->
-        <section class="container-fluid">
-            <div class="row bg-dark-df text-dark mb-show">
-                <div class="col-lg-4">
-                    <ul class="list-unstyled left-items">
-                        <li class="list-inline-item">
-                            <h4>Great Interface</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
-                        </li>
-                        <li class="list-inline-item">
-                            <h4>Available On All Your Devices</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="m-screen text-center">
-                        <img src="assets/img/df_mobile_screen.svg" width="251" height="502">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <ul class="list-unstyled">
-                        <li class="list-inline-item right-items">
-                            <h4>Easy to Customise</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
-                        </li>
-                        <li class="list-inline-item">
-                            <h4>Free Updates</h4>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-12 text-center mt-md-5 pb-md-5">
-                    <h3>Get the free app</h3>
-                    <p>Available on iPhone, iPad and all Android devices from 5.5</p>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <img src="assets/img/ios_logo.svg" width="168" height="50">
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <img src="assets/img/android_logo.svg" width="168" height="50">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        
-
-        <!--    Specialities    -->
-        <section class="container mt-lg-5 mb-lg-5 pb-md-5 df-lists d-none d-sm-block">
-            <div class="section-header text-center mb-lg-5">
-                <img src="assets/img/medical-kit.svg" width="64" height="64" align="Browse doctors by top specialties">
-                <h3 class="mt-lg-1">Browse doctors by top specialties</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <ul class="list-unstyled list-spe">
-                        <li><a href="">Addiction Specialists</a></li>
-                        <li><a href="">Adolescent Specialists</a></li>
-                        <li><a href="">Allergists</a></li>
-                        <li><a href="">Anaesthesiologists</a></li>
-                        <li><a href="">Aerospace Medicine</a></li>
-                        <li><a href="">Physicians</a></li>
-                        <li><a href="">Bariatric Specialists</a></li>
-                        <li><a href="">Cardiologists</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <ul class="list-unstyled list-spe">
-                        <li><a href="">Hospice &amp; Palliative</a></li>
-                        <li><a href="">Specialists</a></li>
-                        <li><a href="">Hospitalists</a></li>
-                        <li><a href="">Infectious Disease</a></li>
-                        <li><a href="">Nephrologists</a></li>
-                        <li><a href="">Neurological Surgeons</a></li>
-                        <li><a href="">Neurologists</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <ul class="list-unstyled list-spe">
-                        <li><a href="">Paediatric Specialists</a></li>
-                        <li><a href="">Psychiatrists</a></li>
-                        <li><a href="">Pulmonologists Radiation</a></li>
-                        <li><a href="">Oncologists</a></li>
-                        <li><a href="">Radiologists</a></li>
-                        <li><a href="">Rheumatologists</a></li>
-                        <li><a href="">Medical Oncologists </a></li>
-                        <li><a href="">Paediatric Radiologists</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <ul class="list-unstyled list-spe">
-                        <li><a href="">Medical Toxicologists</a></li>
-                        <li><a href="">Paediatric Allergists and Immunologists</a></li>
-                        <li><a href="">Paediatric Emergency</a></li>
-                        <li><a href="">Medicine Physicians</a></li>
-                        <li><a href="">Clinical & Laboratory </a></li>
-                        <li><a href="">Immunologists</a></li>
-                        <li><a href="">Dermatopathologists</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        
-
-    </main>
-    
-    <footer>
-        <section class="section-footer container">
-            <img src="assets/img/logo_b.svg" width="306" height="53" alt="DoctorFare" class="mb-3 d-none d-sm-block">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 d-none d-sm-block">
-                    <ul class="list-unstyled">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 d-none d-sm-block">
-                    <ul class="list-unstyled">
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Members Terms &amp; Conditions</a></li>
-                        <li><a href="">Disclosures</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <ul class="list-unstyled sm-text-center">
-                        <li><p class="lead">Are you a doctor&#63;</p></li>
-                        <li><button type="button" class="btn btn-primary">Claim your free profile</button></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3 d-none d-sm-block">
-                    <ul class="list-unstyled text-right">
-                        <li><a href=""><img src="assets/img/android_logo.svg" width="128" height="50" alt="DoctorFare Android App"></a></li>
-                        <li><a href=""><img src="assets/img/ios_logo.svg" width="128" height="50" alt="DoctorFare IOS App"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+	        <!--    Shadow Seperator    -->
+        	<p class="shadow-df">&nbsp;</p>
 
 
-        <section class="bg-dark-df">
-            <div class="container">
-                <div class="d-flex align-items-start justify-content-between py-2">
-                    <small class="align-self-center">&copy; 2018 - 2019, DoctorFare. All Rights Reserved.</small>
-                
-                    <ul class="d-none d-sm-block list-inline align-self-center copy-text">
-                        <li class="list-inline-item"><small>Follow us &#64;</small></li>
-                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_facebook.svg" width="32" height="32" alt="DoctorFare Facebook"></a></li>
-                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_linkedIn.svg" width="32" height="32" class="DoctorFare LinkedIn"></a></li>
-                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_twitter.svg" width="32" height="32" class="DoctorFare Twitter"></a></li>
-                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_instagram.svg" width="32" height="32" class="DoctorFare Instagram"></a></li>
-                    </ul>
-                </div>
-            </div> 
-        </section>
-    </footer>
-    
-    
-    <!--  Mobile Fixed bottom  -->
-    <!-- <div class="footer-fixed-bottom navbar navbar-light bg-light d-block d-sm-none shadow">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
-    </div> -->
-    
-    
-    
-    <!--  Navbar Menu's  -->
-    <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog full-modal" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="navbarModalLabel">
-                        <img src="assets/img/logo_b.svg" alt="DoctorFare">
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Language</p>
-                    <div class="switch mb-4">
-                        <input name="radio" type="radio" value="optionone" id="optionEN" checked>
-                        <label for="optionEN">EN</label>
+        	<!--    How it Works    -->
+        	<section class="section-hw j-height mb-lg-5">
+	            <div class="section-title text-center mb-lg-5">
+	                <h2 class="font-weight-light">How it works</h2>
+	                <p class="title-underline"></p>
+	            </div>
+	            <div class="container-fluid">
+	                <div class="row dy-sections">
+	                    <div class="col-lg-6 col-md-6 col-sm-12 dy-section-first">
+	                        <section class="first-step d-flex justify-content-start align-items-start">
+	                            <img src="assets/img/1.svg" width="500" height="100%">
+	                            <div class="inner-section">
+	                                <p class="lead font-weight-bold">Search for a doctor and choose you convenient time</p>
+	                                <p class="text-secondary">Search and choose for your doctor and schedule an appointment as per your convenient appointment time.</p>
+	                            </div>
+	                        </section>
+	                        <div class="dir-arrow d-none d-sm-none d-md-block d-lg-block d-xl-block">
+	                            <span class="bottom"><img src="assets/img/curve_arrow_down.svg" width="240" height="100%"></span>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-6 col-md-6 col-sm-12 dy-section-second">
+	                        <section class="first-step d-flex justify-content-start align-items-start">
+	                            <img src="assets/img/2.svg" width="400" height="100%">
+	                            <div class="inner-section">
+	                                <p class="lead font-weight-bold">Creating an account is easy and quick</p>
+	                                <p class="text-secondary">Just provide your basic personal information and you’re set for your evaluation!</p>
+	                            </div>
+	                        </section>
+	                        <div class="dir-arrow d-none d-sm-none d-md-block d-lg-block d-xl-block">
+	                            <span class="top"><img src="assets/img/curve_arrow_top.svg" width="240" height="100%"></span>
+	                        </div>
+	                    </div>
+	                    <div class="col-lg-6 col-md-6 col-sm-12 dy-section-third">
+	                        <section class="first-step d-flex flex-fill">
+	                            <img src="assets/img/3.svg" width="400" height="100%">
+	                            <div class="inner-section">
+	                                <p class="lead font-weight-bold">Confirm & Get notified of your appointment</p>
+	                                <p class="text-secondary">You will receive confirmation of your appointment time by notification and/or email.</p>
+	                            </div>
+	                        </section>
+	                    </div>
+	                </div>
 
-                        <input name="radio" type="radio" value="optiontwo" id="optionES">
-                        <label for="optionES" class="right">ES</label>
+	            </div>
+	        </section>
 
-                        <span aria-hidden="true"></span>
-                    </div>
-                    <ul class="list-unstyled">
-                        <li><a href="">Search for doctors</a></li>
-                        <li><a href="">Login&#47;Register</a></li>
-                        <li><a href="">How it Works&#63;</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">About DoctorFare</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/custom.js"></script>
-    
-    
-</body>
+
+
+	        <!--    Mobile Showcase     -->
+	        <section class="section-mb container-fluid">
+	            <div class="row bg-dark-df text-dark mb-show">
+	                <div class="col-lg-4 col-md-4">
+	                    <ul class="list-unstyled left-items">
+	                        <li class="list-inline-item">
+	                            <h4>Great Interface</h4>
+	                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+	                        </li>
+	                        <li class="list-inline-item">
+	                            <h4>Available On All Your Devices</h4>
+	                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-4 col-md-4">
+	                    <div class="m-screen text-center">
+	                        <img src="assets/img/df_mobile_screen.svg" width="251" height="502">
+	                    </div>
+	                </div>
+	                <div class="col-lg-4 col-md-4">
+	                    <ul class="list-unstyled right-items">
+	                        <li class="list-inline-item">
+	                            <h4>Easy to Customise</h4>
+	                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+	                        </li>
+	                        <li class="list-inline-item">
+	                            <h4>Free Updates</h4>
+	                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo</p>
+	                        </li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-12 text-center mt-md-5 pb-md-5">
+	                    <h3>Get the free app</h3>
+	                    <p>Available on iPhone, iPad and all Android devices from 5.5</p>
+	                    <ul class="list-inline mb-app">
+	                        <li class="list-inline-item">
+	                            <a href="#">
+	                                <img src="assets/img/ios_logo.svg" width="168" height="50" alt="DoctorFare iOS App">
+	                            </a>
+	                        </li>
+	                        <li class="list-inline-item">
+	                            <a href="#">
+	                                <img src="assets/img/android_logo.svg" width="168" height="50" alt="DoctorFare Android App">
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </section>
+
+
+	        <!--    Specialities    -->
+	        <section class="container mt-lg-5 mb-lg-5 pb-md-5 df-lists d-none d-sm-block">
+	            <div class="section-header text-center mb-lg-5">
+	                <img src="assets/img/medical-kit.svg" width="64" height="64" align="Browse doctors by top specialties">
+	                <h3 class="mt-lg-1">Browse doctors by top specialties</h3>
+	            </div>
+	            <div class="row">
+	                <div class="col-lg-3 col-md-3 col-sm-6">
+	                    <ul class="list-unstyled list-spe">
+	                        <li><a href="">Addiction Specialists</a></li>
+	                        <li><a href="">Adolescent Specialists</a></li>
+	                        <li><a href="">Allergists</a></li>
+	                        <li><a href="">Anaesthesiologists</a></li>
+	                        <li><a href="">Aerospace Medicine</a></li>
+	                        <li><a href="">Physicians</a></li>
+	                        <li><a href="">Bariatric Specialists</a></li>
+	                        <li><a href="">Cardiologists</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-sm-6">
+	                    <ul class="list-unstyled list-spe">
+	                        <li><a href="">Hospice &amp; Palliative</a></li>
+	                        <li><a href="">Specialists</a></li>
+	                        <li><a href="">Hospitalists</a></li>
+	                        <li><a href="">Infectious Disease</a></li>
+	                        <li><a href="">Nephrologists</a></li>
+	                        <li><a href="">Neurological Surgeons</a></li>
+	                        <li><a href="">Neurologists</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-sm-6">
+	                    <ul class="list-unstyled list-spe">
+	                        <li><a href="">Paediatric Specialists</a></li>
+	                        <li><a href="">Psychiatrists</a></li>
+	                        <li><a href="">Pulmonologists Radiation</a></li>
+	                        <li><a href="">Oncologists</a></li>
+	                        <li><a href="">Radiologists</a></li>
+	                        <li><a href="">Rheumatologists</a></li>
+	                        <li><a href="">Medical Oncologists </a></li>
+	                        <li><a href="">Paediatric Radiologists</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-sm-6">
+	                    <ul class="list-unstyled list-spe">
+	                        <li><a href="">Medical Toxicologists</a></li>
+	                        <li><a href="">Paediatric Allergists and Immunologists</a></li>
+	                        <li><a href="">Paediatric Emergency</a></li>
+	                        <li><a href="">Medicine Physicians</a></li>
+	                        <li><a href="">Clinical & Laboratory </a></li>
+	                        <li><a href="">Immunologists</a></li>
+	                        <li><a href="">Dermatopathologists</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </section>
+
+		</main>
+
+		<footer>
+	        <section class="section-footer container-fluid">
+	            <img src="assets/img/logo_b.svg" width="306" height="53" alt="DoctorFare" class="mb-3 d-none d-sm-block">
+	            <div class="row">
+	                <div class="col-lg-3 col-md-2 col-sm-3 d-none d-sm-block">
+	                    <ul class="list-unstyled">
+	                        <li><a href="">Home</a></li>
+	                        <li><a href="">About Us</a></li>
+	                        <li><a href="">FAQ</a></li>
+	                        <li><a href="">Contact Us</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
+	                    <ul class="list-unstyled">
+	                        <li><a href="">Privacy Policy</a></li>
+	                        <li><a href="">Members Terms &amp; Conditions</a></li>
+	                        <li><a href="">Disclosures</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 col-md-5 col-sm-4">
+	                    <ul class="list-unstyled sm-text-center">
+	                        <li><p class="lead">Are you a doctor&#63;</p></li>
+	                        <li><button type="button" class="btn btn-primary">Claim your free profile</button></li>
+	                    </ul>
+	                </div>
+	                <div class="col-lg-3 d-none d-sm-none">
+	                    <ul class="list-unstyled text-right">
+	                        <li><a href=""><img src="assets/img/android_logo.svg" width="128" height="50" alt="DoctorFare Android App"></a></li>
+	                        <li><a href=""><img src="assets/img/ios_logo.svg" width="128" height="50" alt="DoctorFare IOS App"></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </section>
+
+
+	        <section class="bg-dark-df">
+	            <div class="container-fluid">
+	                <div class="d-flex align-items-start justify-content-between py-2">
+	                    <small class="align-self-center">&copy; 2018 - 2019, DoctorFare. All Rights Reserved.</small>
+	                
+	                    <ul class="d-none d-sm-block list-inline align-self-center copy-text">
+	                        <li class="list-inline-item"><small>Follow us &#64;</small></li>
+	                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_facebook.svg" width="32" height="32" alt="DoctorFare Facebook"></a></li>
+	                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_linkedIn.svg" width="32" height="32" class="DoctorFare LinkedIn"></a></li>
+	                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_twitter.svg" width="32" height="32" class="DoctorFare Twitter"></a></li>
+	                        <li class="list-inline-item"><a href="" target="_blank"><img src="assets/img/df_instagram.svg" width="32" height="32" class="DoctorFare Instagram"></a></li>
+	                    </ul>
+	                </div>
+	            </div> 
+	        </section>
+	    </footer>
+
+	    <nav class="alert navbar fixed-bottom navbar-light bg-light d-block d-sm-none" role="alert">
+			<button type="button" class="close align-middle" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/logo_b.svg" width="160" height="100%" alt="DoctorFare Mobile App">
+			</a>
+			<a class="btn btn-primary" href="#" role="button">Open the app</a>
+		</nav>
+
+		<!--  Navbar Menu's  -->
+	    <div class="modal fade" id="navbarModal" tabindex="-1" role="dialog" aria-labelledby="navbarModalLabel" aria-hidden="true" data-backdrop="static">
+	        <div class="modal-dialog full-modal" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h5 class="modal-title" id="navbarModalLabel">
+	                        <img src="assets/img/logo_b.svg" alt="DoctorFare" width="200" height="100%">
+	                    </h5>
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">&times;</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">
+	                    <p>Language</p>
+	                    <div class="switch mb-4">
+	                        <input name="radio" type="radio" value="optionone" id="optionEN" checked>
+	                        <label for="optionEN">EN</label>
+
+	                        <input name="radio" type="radio" value="optiontwo" id="optionES">
+	                        <label for="optionES" class="right">ES</label>
+
+	                        <span aria-hidden="true"></span>
+	                    </div>
+	                    <ul class="list-unstyled">
+	                        <li><a href="" class="btn btn-link btn-block">Search for doctors</a></li>
+	                        <li><a href="" class="btn btn-link btn-block">Login&#47;Register</a></li>
+	                        <li><a href="" class="btn btn-link btn-block">How it Works&#63;</a></li>
+	                        <li><a href="" class="btn btn-link btn-block">FAQ</a></li>
+	                        <li><a href="" class="btn btn-link btn-block">About DoctorFare</a></li>
+	                    </ul>
+	                    <hr>
+	                	<ul class="list-inline text-center mt-5">
+	                        <li class="list-inline-item"><a href=""><img src="assets/img/android_logo.svg" width="128" height="50" alt="DoctorFare Android App"></a></li>
+	                        <li class="list-inline-item"><a href=""><img src="assets/img/ios_logo.svg" width="128" height="50" alt="DoctorFare IOS App"></a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+		<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+	    <script src="assets/js/popper.min.js"></script>
+	    <script src="assets/js/bootstrap.min.js"></script>
+	    <script src="assets/js/custom.js"></script>
+	</body>
 </html>
